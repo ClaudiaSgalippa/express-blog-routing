@@ -1,7 +1,7 @@
 const express = require("express"); /**Importiamo il framework "Express"*/
 const app = express(); /**Creiamo un'istanza dell'applicazione "Express"*/
 const port = 3000; /**Dichiariamo il numero della porta su cui il server ascolterà*/
-const posts = require("./posts.js"); /**Import del modulo contenente l'array nel file "post.js"*/
+const posts = require("./routers/posts.js"); /**Import del modulo contenente l'array nel file "post.js"*/
 
 app.use(express.static("public")); /**Configuriamo la cartella "public" per rendere siponibili i file "statici" (le immagini)*/
 

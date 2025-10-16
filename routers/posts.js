@@ -1,3 +1,6 @@
+const express = require("express"); /**Importiamo il framework "Express"*/
+const router = express.Router(); /**Creiamo un router*/
+
 const posts = [
   {
     id: 1,
