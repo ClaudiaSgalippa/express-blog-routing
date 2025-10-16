@@ -50,8 +50,8 @@ const posts = [
 /** Creiamo le rotte per le operazioni CRUD*/
 
 /**INDEX*/
-router.get("/", (req, res) => { 
-  res.send("Lista di tutti i post");
+router.get("/", (req, res) => {
+  res.json(posts); /**Invia l’intero array come JSON - BONUS 1*/
 });
 
 /**SHOW*/
