@@ -47,4 +47,31 @@ const posts = [
   },
 ];
 
-module.exports = posts;
+/** Creiamo le rotte per le operazioni CRUD*/
+
+/**INDEX*/
+router.get("/", (req, res) => { 
+  res.send("Lista di tutti i post");
+});
+
+/**SHOW*/
+router.get("/:id", (req, res) => {
+  res.send("Info del post" + req.params.id);
+});
+
+/**CREATE*/
+router.post("/", (req, res) => {
+  res.send("Creazione di un nuovo post");
+});
+
+/**UPDATE*/
+router.put("/:id", (req, res) => {
+  res.send("Modifica del post" + req.params.id);
+});
+
+/**DELETE*/
+router.delete("/:id", (req, res) => {
+  res.send("Delete del post" + req.params.id);
+});
+
+module.exports = router;
